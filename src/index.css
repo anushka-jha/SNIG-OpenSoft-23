@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    /* background-color: rgba(0,0,0,0.4); */
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  /* font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem; */
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 20px;
+    border: 1px solid #f1f3f5;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fff;
+    width: 100%;
+}
+
+input:focus{
+     outline: none;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    color: #707070;
+    text-align: center;
+}
+
+.sign-up, .forget-password, .go-to-home{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 25px;
+    /* color: #707070; */
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign-up{
+    color: #3b76ef;
+}
+
+.forget-password, .go-to-home{
+    color: #707070;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+button {
+  background-color: #3b76ef;
+    border: 1px solid #3b76ef;
+    color: #fff;
+    display: inline-block;
+    padding: 11px 23px;
+    text-transform: capitalize;
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px;
+    white-space: nowrap;
+    -webkit-transition: .3s;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: #3b76ef;
+}
+
+/* .instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #707070;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+} */
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
