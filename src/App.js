@@ -1,13 +1,14 @@
-import React from "react"
-import Register from "./Register";
-import Login from "./Login";
+import React from "react";
+// import Register from "./Register";
+import Login from "./Pages/Login";
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
     <>
-    <div className="App">
-      <Login />
-    </div>
+      <div className="App">
+        <Dashboard />
+      </div>
     </>
   );
 }

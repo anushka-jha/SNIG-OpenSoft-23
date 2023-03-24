@@ -1,0 +1,64 @@
+/* @media screen and (max-width: 768px) {
+  div {
+    font-size: 14px;
+  }
+} */
+
+.row {
+  background-color: #fff;
+  font-family: muli, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+.border-radius {
+  border-radius: 10px;
+}
+
+.col-3 {
+  padding: 20px 15px;
+  position: relative;
+}
+
+.c1 {
+  background-color: #3b76ef;
+}
+
+.c2 {
+  background-color: #63c7ff;
+}
+
+.c3 {
+  background-color: #a66dd4;
+}
+.c4 {
+  background-color: #6dd4b1;
+}
+
+.c1:hover {
+  background-color: #3b76ef;
+}
+
+.c2:hover {
+  background-color: #3b76ef;
+}
+
+.c3:hover {
+  background-color: #3b76ef;
+}
+
+.c4:hover {
+  background-color: #3b76ef;
+}
+
+.cards {
+  height: 23vh;
+  width: 16vw;
+  border-radius: 10px;
+  margin-left: 30px;
+}
