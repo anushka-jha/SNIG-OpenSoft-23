@@ -5,11 +5,15 @@ import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
-    <>
+    <div>
+      <Dashboard/>
       <div className="App">
-        <Dashboard />
+        <Login /> 
       </div>
-    </>
+      
+
+    </div>
+    
   );
 }
 

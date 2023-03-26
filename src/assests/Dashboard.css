@@ -1,11 +1,7 @@
-.body {
-  z-index: -1;
-  background-color: #f7faff;
-  height: 100vh;
-  justify-content: center;
-}
+
 
 .top {
+  display: flex;
   z-index: 0;
   background-color: white;
   width: 99%;
@@ -25,14 +21,9 @@
   width: 80px;
   margin: 15px 15px 15px 0;
   border-radius: 50%;
-
   border: 2px solid #a5adc6;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
 
 .modal-div {
   position: absolute;
