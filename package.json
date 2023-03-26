@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "cdbreact": "^1.5.10",
+    "mdb-ui-kit": "^6.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^1.6.6",
     "react-dom": "^18.2.0",
