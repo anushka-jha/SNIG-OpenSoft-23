@@ -1,10 +1,10 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import "./signup.css"
 
 function signup() {
   return (
+    
     <>
         <div className="card mx-auto w-50" style={{marginTop: 3 + 'em'}}>
             <h2 className="card-header text-center">

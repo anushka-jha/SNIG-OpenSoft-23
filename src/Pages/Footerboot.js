@@ -15,9 +15,9 @@ function Footer() {
                     <input type="text" class="form-control" placeholder="Name"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter email"/>
+                    <input type="email" class="form-control" placeholder="Enter email"/>
                 </div>
-                <Button type="button" class="btn btn-primary" style={{width:"5%"}}>Submit</Button>
+                <Button type="button" class="btn btn-primary">Submit</Button>
                 </Form>
           </Col>
           <Col md={4} className="mb-3">
