@@ -4,7 +4,7 @@ import Footer from "./footer.js"
 function mainpage() {
   return (
     <>
-    <nav className="navbar navbar-dark bg-primary p-25">
+    <nav className="navbar navbar-dark bg-primary">
         <a className="navbar-brand" href="#">
             <img src="" width="30" height="30" alt=""></img>
         </a> 
@@ -14,11 +14,11 @@ function mainpage() {
             <a href='#'>SIGNUP</a>
         </span>
     </nav>
-    <div className="card mb-3 mt-3">
-        <img className="card-img-top" src="public\main.jpg" alt="Card image cap"></img>
+    <div className="card mb-3 mt-3 w-25 mx-auto border-0">
+        <img className="card-img-top" src="main.jpg" alt="Card image cap"></img>
     </div>
 
-    <div className="row">
+    <div className="row mx-auto">
         <div className="col-sm-4">
             <div className="card">
                 <div className="card-body">
