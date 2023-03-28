@@ -56,9 +56,49 @@
   background-color: #3b76ef;
 }
 
-.cards {
+
+
+/* .cards {
   height: 23vh;
-  width: 16vw;
+  width: 23%;
   border-radius: 10px;
-  margin-left: 30px;
+  margin-left: 2%;
+} */
+
+.column {
+  float: left;
+  width: 25%;
+  
 }
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  text-align: center;
+  height: 23vh;
+  border-radius: 10px;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+

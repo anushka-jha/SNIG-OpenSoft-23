@@ -32,29 +32,30 @@ const Login = () => {
   return (
     <>
       {success ? (
-        <section>
-          <h1>You are logged in!</h1>
+        <section className="Section">
+          <h1 className="H1">You are logged in!</h1>
           <br />
-          <p>
+          <p className="para">
             <a href="#" className="go-to-home">
               Go to Home
             </a>
           </p>
         </section>
       ) : (
-        <section>
+        <section className="Section">
           <p
             ref={errRef}
-            className={errMsg ? "errmsg" : "offscreen"}
+            className={errMsg ? "errmsg para" : "offscreen para"}
             aria-live="assertive"
           >
             {errMsg}
           </p>
-          <h1>Log in</h1>
-          <form on onSubmit={handleSubmit}>
+          <h1 className="H1" style={{fontSize: "22px"}}>Log in</h1>
+          <form on onSubmit={handleSubmit} className="Form">
             {/* <label htmlFor="username">
                     Username:</label> */}
             <input
+              className="Input"
               type="text"
               id="username"
               placeholder="Enter your email"
@@ -68,6 +69,7 @@ const Login = () => {
             {/* <label htmlFor="password">
                     Password:</label> */}
             <input
+              className="Input"
               type="password"
               id="password"
               placeholder="Password"
@@ -76,10 +78,10 @@ const Login = () => {
               required
             />
 
-            <button>Log In</button>
+            <button className="Button" style={{fontSize: "13px",borderRadius: "5px"}}>Log In</button>
           </form>
 
-          <p>
+          <p className="para">
             Need an Account?&nbsp;
             {/* <span className="line"> */}
             {/* {put router link} */}
