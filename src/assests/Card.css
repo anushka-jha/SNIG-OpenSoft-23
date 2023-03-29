@@ -1,8 +1,4 @@
-/* @media screen and (max-width: 768px) {
-  div {
-    font-size: 14px;
-  }
-} */
+
 
 .row {
   background-color: #fff;
@@ -58,13 +54,6 @@
 
 
 
-/* .cards {
-  height: 23vh;
-  width: 23%;
-  border-radius: 10px;
-  margin-left: 2%;
-} */
-
 .column {
   float: left;
   width: 25%;
@@ -81,7 +70,6 @@
   clear: both;
 }
 
-/* Style the counter cards */
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   text-align: center;
@@ -89,8 +77,6 @@
   border-radius: 10px;
 
 }
-
-/* Responsive columns - one column layout (vertical) on small screens */
 
 
 @media screen and (max-width: 600px) {
