@@ -1,5 +1,6 @@
 import React from 'react';
-import Footer from "./footer.js"
+import { Link } from 'react-router-dom';
+import Footer from "./Footer.js";
 
 function mainpage() {
   return (
@@ -9,9 +10,9 @@ function mainpage() {
             <img src="" width="30" height="30" alt=""></img>
         </a> 
         <span className="navbar-text">
-            <a href='#'>LOGIN</a>
-            <a> </a>
-            <a href='#'>SIGNUP</a>
+            <Link to="/login">LOGIN</Link>
+            
+            <Link to="/signup">SIGNUP</Link>
         </span>
     </nav>
     <div className="card mb-3 mt-3 w-25 mx-auto border-0">

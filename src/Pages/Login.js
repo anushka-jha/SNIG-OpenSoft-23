@@ -2,6 +2,8 @@ import React from "react";
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
 import "../assests/login.css";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -78,16 +80,17 @@ const Login = () => {
               required
             />
 
-            <button className="Button" style={{fontSize: "13px",borderRadius: "5px"}}>Log In</button>
+
+            <button className="Button" style={{fontSize: "13px",borderRadius: "5px"}}><Link to="/dashboard">Log In</Link></button>
           </form>
 
           <p className="para">
             Need an Account?&nbsp;
             {/* <span className="line"> */}
             {/* {put router link} */}
-            <a className="sign-up" href="#">
+            <Link className="sign-up" to="/signup">
               Sign Up
-            </a>
+            </Link>
             {/* </span> */}
             <br />
             <a className="forget-password" href="#">

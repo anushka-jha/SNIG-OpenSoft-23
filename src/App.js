@@ -1,29 +1,25 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import Register from "./Register";
-<<<<<<< HEAD
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Signup from "./Pages/signup";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
-import Footer from "./Pages/Footer"
-=======
-import Signup from "./Pages/signup";
->>>>>>> eed8a16576d61018c63201f3fa8ddb0ff14f3ce1
+import Mainpage from "./Pages/mainpage";
+import CreateProfile from "./Pages/Create-Profile";
+import Analytics from "./Pages/Analytics";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "#f7faff"}}>
-      <Dashboard/>
-      <div className="App">
-<<<<<<< HEAD
-        <Signup />
-=======
-        <Login /> 
->>>>>>> 6a716204003b3a9d722022d8fe16bb057ae80185
-      </div>
-
+    <div>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/createprofile" element={<CreateProfile />} />
+        <Route path="/analytics" element={<Analytics />} />
+      </Routes>
     </div>
-    
   );
 }
-
 export default App;

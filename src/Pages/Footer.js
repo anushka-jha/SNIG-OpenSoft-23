@@ -1,11 +1,8 @@
 import React from 'react';
-<<<<<<< HEAD
 import '../assests/Footer.css';
-=======
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
->>>>>>> eed8a16576d61018c63201f3fa8ddb0ff14f3ce1
 
 function Footer() {
   return (

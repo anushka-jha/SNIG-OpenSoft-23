@@ -1,6 +1,7 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 function signup() {
   return (
@@ -36,9 +37,11 @@ function signup() {
                 <div className="form-group">
                     <input type="password" className="form-control" placeholder="Re-enter Password"/>
                 </div>
-                <Button type="button" className="btn btn-primary" style={{width:"100%"}}>Submit</Button>
+                <Button type="button" className="btn btn-primary" style={{width:"100%"}}>
+                    <Link to="/login">Submit</Link>
+                </Button>
                 <p></p>
-                <p className="text-center">Have an account? <a href ="#">Log in</a> </p>
+                <p className="text-center">Have an account? <Link to="/login">Log in</Link> </p>
                 <p className="text-center"><a href="#">Forgot Password</a></p>
                 </Form>
             </div>
