@@ -1,13 +1,13 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+//import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom';
 
 function signup() {
   return (
     
     <>
-        <div className="card mx-auto w-50" style={{marginTop: 3 + 'em'}}>
+        <div className="card mx-auto w-50" style={{marginTop: 5 + 'em'}}>
             <h2 className="card-header text-center">
                 Register
             </h2>
@@ -37,11 +37,9 @@ function signup() {
                 <div className="form-group">
                     <input type="password" className="form-control" placeholder="Re-enter Password"/>
                 </div>
-                <Button type="button" className="btn btn-primary" style={{width:"100%"}}>
-                    <Link to="/login">Submit</Link>
-                </Button>
+                <a className="btn btn-primary" href="/login" role="button" style={{width:"100%"}}>Submit</a>
                 <p></p>
-                <p className="text-center">Have an account? <Link to="/login">Log in</Link> </p>
+                <p className="text-center mb-1">Have an account? <Link to="/login">Log in</Link> </p>
                 <p className="text-center"><a href="#">Forgot Password</a></p>
                 </Form>
             </div>
