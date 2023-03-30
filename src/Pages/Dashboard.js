@@ -23,7 +23,7 @@ const Dashboard = () => {
       {isHover && (
         <ModalDiv handleEnter={handleEnter} handleLeave={handleLeave} />
       )}
-      <div className="flex-container" style={{ marginTop: "50px" }}>
+      <div className="flex-container" style={{ marginTop: "50px",display:"flex" }}>
         <Sidebar />
         <Cards />
       </div>
