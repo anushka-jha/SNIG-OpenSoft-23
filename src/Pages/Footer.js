@@ -1,39 +1,36 @@
 import React from 'react';
-import '../assests/Footer.css';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
+//import { Container, Row, Col, Nav } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer className="bg-dark text-white mt-5" style={{position:"absolute",bottom:"0",width:"100%"}}>
-      <Container>
-        <Row>
-          <Col md={4} className="mb-3">
-            <h5 className="mb-3">Contact Us</h5>
+      {/* <Container> */}
+        <div className='row mx-auto'>
+          <div className="col-sm-4">
+            <h5 className='text-center'>Contact Us</h5>
             <Form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name"/>
+                <div className="form-group mb-2">
+                    <input type="text" className="form-control" placeholder="Name"/>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter email"/>
+                <div className="form-group mb-2">
+                    <input type="email" className="form-control" placeholder="Enter email"/>
                 </div>
-                <Button type="button" class="btn btn-primary">Submit</Button>
-                </Form>
-          </Col>
-          <Col md={4} className="mb-3">
-            <h5 className="mb-3">Links</h5>
-            <Nav className="flex-column">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/services">Services</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
-            </Nav>
-          </Col>
-          <Col md={4} className="mb-3">
-            <h5 className="mb-3">Follow Us</h5>
+                <Button type="button" className="btn btn-primary mb-1">Submit</Button>
+            </Form>
+          </div>
+          <div className="col-sm-4">
+            <h5 className='text-center'>Links</h5>
+            <p className='text-center'><Link to = "/">Home</Link></p>
+            <p className='text-center'><a href="#">About Us</a></p>
+            <p className='text-center'><a href="#">Services</a></p>
+          </div>
+          <div className="col-sm-4 text-center">
+            <h5>Follow Us</h5>
             <p>Social media links go here</p>
-          </Col>
+          </div>
           {/* <Col md={4} className="mb-3">
             <h5 className="mb-3">Follow Us</h5>
             <p>Social media links go here</p>
@@ -46,8 +43,8 @@ function Footer() {
             <h5 className="mb-3">Follow Us</h5>
             <p>Social media links go here</p>
           </Col> */}
-        </Row>
-      </Container>
+        </div>
+      {/* </Container> */}
     </footer>
   );
 };
