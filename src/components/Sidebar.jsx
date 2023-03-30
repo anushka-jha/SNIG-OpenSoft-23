@@ -39,7 +39,9 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="home">Dashboard</CDBSidebarMenuItem>
 
-            <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="table"><Link to="/payment">
+                Transactions
+              </Link></CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="user">My Accounts</CDBSidebarMenuItem>
 
