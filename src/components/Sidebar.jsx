@@ -40,6 +40,9 @@ const Sidebar = () => {
             <CDBSidebarMenuItem icon="home">Dashboard</CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="table">
+              Transactions History
+            </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="user">
               <Link to="/bankform">My Accounts</Link>
