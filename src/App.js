@@ -7,6 +7,7 @@ import Dashboard from "./Pages/Dashboard";
 import Mainpage from "./Pages/mainpage";
 import CreateProfile from "./Pages/Create-Profile";
 import Analytics from "./Pages/Analytics";
+import BankForm from "./Pages/bankform";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/createprofile" element={<CreateProfile />} />
         <Route path="/analytics" element={<Analytics />} />
+        <Route path="/bankform" element={<BankForm />} />
       </Routes>
     </div>
   );

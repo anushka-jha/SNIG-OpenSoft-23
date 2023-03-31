@@ -41,21 +41,18 @@ const Sidebar = () => {
 
             <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
 
-            <CDBSidebarMenuItem icon="user">My Accounts</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="user">
+              <Link to="/bankform">My Accounts</Link>
+            </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="chart-line">
               Account statement
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line">
-              <Link to="/analytics">
-                Analytics
-              </Link>
+              <Link to="/analytics">Analytics</Link>
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line">
-              <Link to="/">
-              Logout option
-              </Link>
-              
+              <Link to="/">Logout option</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="exclamation-circle">
