@@ -7,7 +7,11 @@ import Dashboard from "./Pages/Dashboard";
 import Mainpage from "./Pages/mainpage";
 import CreateProfile from "./Pages/Create-Profile";
 import Analytics from "./Pages/Analytics";
+<<<<<<< HEAD
 import Payment from "./Pages/Payment";
+=======
+import BankForm from "./Pages/bankform";
+>>>>>>> 588852ca8c9cbfc523f52d1c202ddd16c196150f
 
 function App() {
   return (
@@ -19,8 +23,12 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/createprofile" element={<CreateProfile />} />
         <Route path="/analytics" element={<Analytics />} />
+<<<<<<< HEAD
         <Route path="/payment" element={<Payment />} />
 
+=======
+        <Route path="/bankform" element={<BankForm />} />
+>>>>>>> 588852ca8c9cbfc523f52d1c202ddd16c196150f
       </Routes>
     </div>
   );
