@@ -1,38 +1,49 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import "./signup.css"
+//import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 function signup() {
   return (
+    
     <>
-    <div class="size" >
-        <div class="card w-50">
-            <h2 class="card-header">
+        <div className="card mx-auto w-50" style={{marginTop: 5 + 'em'}}>
+            <h2 className="card-header text-center">
                 Register
             </h2>
-            <div class="card-body">
+            <div className="card-body">
                 <Form>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter UserID"/>
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Enter Name"/>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Mobile No."/>
+                <div className="form-group">
+                    <input type="email" className="form-control" placeholder="Enter Email Id"/>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Enter Country"/>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password"/>
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Enter City"/>
                 </div>
-                <Button type="button" class="btn btn-primary" style={{width:"100%"}}>Submit</Button>
-                <p class="text-center">Have an account? <a href ="#">Log in</a> </p>
-                <p class="text-center"><a href="#">Forgot Password</a></p>
+                <div className="form-group">
+                    <input type="tel" className="form-control" placeholder="Enter Mobile No."/>
+                </div>
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Enter Username"/>
+                </div>
+                <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Password"/>
+                </div>
+                <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Re-enter Password"/>
+                </div>
+                <a className="btn btn-primary" href="/login" role="button" style={{width:"100%"}}>Submit</a>
+                <p></p>
+                <p className="text-center mb-1">Have an account? <Link to="/login">Log in</Link> </p>
+                <p className="text-center"><a href="#">Forgot Password</a></p>
                 </Form>
             </div>
-        </div>
     </div>
-  
    </>
   );
 }

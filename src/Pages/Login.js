@@ -1,7 +1,9 @@
 import React from "react";
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
-import "../assests/login.css";
+//import "../assests/login.css";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -32,66 +34,68 @@ const Login = () => {
   return (
     <>
       {success ? (
-        <section>
-          <h1>You are logged in!</h1>
+        <section className="Section">
+          <h1 className="H1">You are logged in!</h1>
           <br />
-          <p>
+          <p className="para">
             <a href="#" className="go-to-home">
               Go to Home
             </a>
           </p>
         </section>
       ) : (
-        <section>
+        <section className="Section">
           <p
             ref={errRef}
-            className={errMsg ? "errmsg" : "offscreen"}
+            className={errMsg ? "errmsg para" : "offscreen para"}
             aria-live="assertive"
           >
             {errMsg}
           </p>
-          <h1>Log in</h1>
-          <form on onSubmit={handleSubmit}>
+          <div className="card mx-auto w-25" style={{marginTop: 15 + 'em'}}>
+            <h3 className="card-header text-center">
+                Log in
+            </h3>
+            <div className="card-body">
+            <form on onSubmit={handleSubmit} className="Form">
             {/* <label htmlFor="username">
                     Username:</label> */}
+            <div className="form-group">
             <input
-              type="text"
+              className="form-control mb-2"
+              type="email"
               id="username"
-              placeholder="Enter your email"
+              placeholder="Enter Email Id"
               ref={userRef}
               autoComplete="off"
               onChange={(e) => setUser(e.target.value)}
               value={user}
               required
             />
+            </div>
 
             {/* <label htmlFor="password">
                     Password:</label> */}
+            <div className="form-group">
             <input
+              className="form-control mb-2"
               type="password"
               id="password"
-              placeholder="Password"
+              placeholder="Enter Password"
               onChange={(e) => setPwd(e.target.value)}
               value={pwd}
               required
             />
+            </div>
 
-            <button>Log In</button>
-          </form>
-
-          <p>
-            Need an Account?&nbsp;
-            {/* <span className="line"> */}
-            {/* {put router link} */}
-            <a className="sign-up" href="#">
-              Sign Up
-            </a>
-            {/* </span> */}
-            <br />
-            <a className="forget-password" href="#">
-              Forget Password?
-            </a>
-          </p>
+            <a className="btn btn-primary" href="/dashboard" role="button" style={{width:"100%"}}>Log in</a>
+          
+            <p></p>
+            <p className="text-center mb-1">Need an account? <Link to="/signup">Sign up</Link> </p>
+            <p className="text-center"><a href="#">Forgot Password</a></p>
+            </form>
+            </div>
+          </div>
         </section>
       )}
     </>

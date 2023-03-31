@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assests/Dashboard.css";
 
 function ModalDiv(props) {
@@ -11,24 +12,24 @@ function ModalDiv(props) {
       <p style={{ color: "#828bb2", fontSize: "12px" }}>Welcome Admin!</p>
       <p style={{ fontSize: "12px" }}>Trevor James</p>
       <hr />
-      <a
-        href="#"
+      <Link
+        to="/createprofile"
         style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
       >
         <p>My Profile</p>
-      </a>
+      </Link>
       <a
         href="#"
         style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
       >
         <p>Settings</p>
       </a>
-      <a
-        href="#"
+      <Link
+        to="/"
         style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
       >
         <p>Log Out</p>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,42 +1,52 @@
 import React from 'react';
-import './Footer.css';
+//import { Container, Row, Col, Nav } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer>
-      
-      <div className="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div className="footer-email">
-        <h3>Subscribe to our Newsletter</h3>
-        <form>
-          <input type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-      <div className="footer-panels">
-        <div className="panel">
-          <h3>Panel 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <footer className="bg-dark text-white mt-5" style={{position:"absolute",bottom:"0",width:"100%"}}>
+      {/* <Container> */}
+        <div className='row mx-auto'>
+          <div className="col-sm-4">
+            <h5 className='text-center'>Contact Us</h5>
+            <Form>
+                <div className="form-group mb-2">
+                    <input type="text" className="form-control" placeholder="Name"/>
+                </div>
+                <div className="form-group mb-2">
+                    <input type="email" className="form-control" placeholder="Enter email"/>
+                </div>
+                <Button type="button" className="btn btn-primary mb-1">Submit</Button>
+            </Form>
+          </div>
+          <div className="col-sm-4">
+            <h5 className='text-center'>Links</h5>
+            <p className='text-center'><Link to = "/">Home</Link></p>
+            <p className='text-center'><a href="#">About Us</a></p>
+            <p className='text-center'><a href="#">Services</a></p>
+          </div>
+          <div className="col-sm-4 text-center">
+            <h5>Follow Us</h5>
+            <p>Social media links go here</p>
+          </div>
+          {/* <Col md={4} className="mb-3">
+            <h5 className="mb-3">Follow Us</h5>
+            <p>Social media links go here</p>
+          </Col>
+          <Col md={4} className="mb-3">
+            <h5 className="mb-3">Follow Us</h5>
+            <p>Social media links go here</p>
+          </Col>
+          <Col md={4} className="mb-3">
+            <h5 className="mb-3">Follow Us</h5>
+            <p>Social media links go here</p>
+          </Col> */}
         </div>
-        <div className="panel">
-          <h3>Panel 2</h3>
-          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div className="panel">
-          <h3>Panel 3</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
+      {/* </Container> */}
     </footer>
   );
-}
+};
 
 export default Footer;

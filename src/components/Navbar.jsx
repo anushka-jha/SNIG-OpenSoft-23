@@ -3,7 +3,7 @@ import "../assests/Dashboard.css";
 
 function Navbar(props) {
   return (
-    <nav className="navbar top">
+    <nav className="navbar top d-flex ml-auto mr-auto">
       <span className="navbar-brand mb-0 h1 brand">Finance</span>
       <div
         style={{ height: "100%" }}
@@ -12,7 +12,7 @@ function Navbar(props) {
       >
         <img
           className="profile-photo img-fluid"
-          src="../images/profile.jpg"
+          src="profile.jpg"
           alt="Profile"
         />
       </div>

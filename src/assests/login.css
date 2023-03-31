@@ -1,21 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-family: "Nunito", sans-serif;
-  font-size: 22px;
-  color: #fff;
-}
-
-/* body {
-    min-height: 100vh;
-    background-color: white;
-} */
 
 .App {
   display: flex;
@@ -26,27 +11,27 @@ html {
   padding: 1rem 0.5rem;
 }
 
-h1 {
+.H1 {
   font-size: 22px;
   font-weight: 600;
   color: black;
   text-align: center;
 }
 
-section {
+.Section {
   width: 100%;
   max-width: 420px;
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem;
+  padding: 1rem; */
   /* background-color: rgba(0,0,0,0.4); */
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
-form {
+.Form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -54,14 +39,14 @@ form {
   padding-bottom: 1rem;
 }
 
-input[type="text"],
-input[type="password"],
-button,
+.Input[type="text"],
+.Input[type="password"],
+.Button,
 textarea {
   font-family: "Nunito", sans-serif;
-  /* font-size: 22px;
+  font-size: 22px;
   padding: 0.25rem;
-  border-radius: 0.5rem; */
+  border-radius: 0.5rem; 
   height: 50px;
   line-height: 50px;
   padding: 10px 20px;
@@ -73,11 +58,11 @@ textarea {
   width: 100%;
 }
 
-input:focus {
+.Input:focus {
   outline: none;
 }
 
-p {
+.para {
   font-size: 16px;
   font-weight: 500;
   margin-top: 25px;
@@ -90,9 +75,9 @@ p {
 .go-to-home {
   font-size: 16px;
   font-weight: 500;
-  margin-top: 25px;
+  margin-top: 25px; */
   /* color: #707070; */
-  text-align: center;
+  /* text-align: center;
   text-decoration: none;
 }
 
@@ -106,15 +91,15 @@ p {
 }
 
 label,
-button {
+.Button {
   margin-top: 1rem;
 }
 
-button {
+.Button {
   padding: 0.5rem;
 }
 
-button {
+.Button {
   background-color: #3b76ef;
   border: 1px solid #3b76ef;
   color: #fff;
@@ -131,7 +116,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.Button:hover {
   background-color: white;
   color: #3b76ef;
 }
@@ -160,4 +145,4 @@ button:hover {
 
 .line {
   display: inline-block;
-}
+} */

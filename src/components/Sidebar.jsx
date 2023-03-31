@@ -7,7 +7,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from "cdbreact";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -39,18 +39,29 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="home">Dashboard</CDBSidebarMenuItem>
 
+<<<<<<< HEAD
+            <CDBSidebarMenuItem icon="table"><Link to="/payment">
+                Transactions
+              </Link></CDBSidebarMenuItem>
+=======
             <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="table">
+              Transactions History
+            </CDBSidebarMenuItem>
+>>>>>>> 588852ca8c9cbfc523f52d1c202ddd16c196150f
 
-            <CDBSidebarMenuItem icon="user">My Accounts</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="user">
+              <Link to="/bankform">My Accounts</Link>
+            </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="chart-line">
               Account statement
             </CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
-
-            <CDBSidebarMenuItem icon="chart-line">Settings</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line">
-              Logout option
+              <Link to="/analytics">Analytics</Link>
+            </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="chart-line">
+              <Link to="/">Logout option</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="exclamation-circle">
