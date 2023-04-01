@@ -28,84 +28,13 @@ const Analytics = () => {
       >
         
         <Sidebar />
-<<<<<<< HEAD
+
         <Chart1 />
         <Chart2 />
-
-        
-
-=======
-        <Chart1 style={{ marginTop: "20px" }} />
-        <Chart2 style={{ marginTop: "20px" }} />
->>>>>>> fff38ea77e3c19a822f576e060e75ef7b61e5f87
       </div>
       
 
-      {/*<div className="w-100">
-      <div className="row mx-auto" style={{marginBottom:"5%"}}>
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 1</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
-
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 1</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
-
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 1</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
       
-
-
-      </div>
-
-       <div className="row mx-auto" style={{marginBottom:"5%"}}>
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 4</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
-
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 5</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
-
-        <div className="fluid-container col-3">
-          <div className="card" style={{height:"200px"}}>
-            <div className="card-body">
-              <h5 className="card-title">Card 6</h5>
-              <p className="card-text">Text 1</p>
-            </div>
-          </div>
-        </div> 
-      
-
-
-      </div> 
-      </div> */}
 
       
   </div>

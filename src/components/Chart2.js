@@ -30,7 +30,7 @@ const Chart2 = () => {
   });
 
   return (
-    <CDBContainer style={{ width: "40%" }}>
+    <CDBContainer style={{ width: "40%", marginTop:"10%", height: "100vh" }}>
       <Line data={data} options={{ responsive: true }} />
     </CDBContainer>
   );

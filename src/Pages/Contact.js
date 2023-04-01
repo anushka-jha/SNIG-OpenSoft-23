@@ -34,7 +34,7 @@ const Contact = () => {
 
             <Link
               className="btn btn-primary"
-              to="/dashboard"
+              to="/"
               role="button"
               style={{ width: "100%" }}
             >

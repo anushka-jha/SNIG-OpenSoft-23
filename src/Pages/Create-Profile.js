@@ -362,7 +362,7 @@ import {
 
 export default function ProfilePage() {
   return (
-    <div className='create' style={{ backgroundColor: '#f7faff', margin:'auto' }} class='modal-fullscreen' >
+    <div className='create' style={{  margin:'auto' }} class='modal-fullscreen' >
       <MDBContainer className="py-5" >
         <MDBRow >
           <MDBCol>
@@ -378,13 +378,13 @@ export default function ProfilePage() {
             <MDBCard className="mb-2">
               <MDBCardBody className="text-center">
                  <MDBCardImage
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                  src="profilepic.webp"
                   alt="avatar"
                   className="rounded-circle"
                   style={{ width: '150px' }}
                   fluid /> 
-                <p className="text-muted mb-1">Name of the Person</p>
-                <p className="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                <p className="text-muted mb-1 mt-1">Username</p>
+                
                 <div className="d-flex justify-content-center mb-2">
                 <button type="submit" class="btn btn-primary">Upload Profile Picture</button>
                   {/*<MDBBtn outline className="ms-1">User Profile</MDBBtn>*/}

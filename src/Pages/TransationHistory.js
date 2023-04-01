@@ -30,7 +30,7 @@ const TransactionHistory = () => {
         <div className="w-100">
           <table
             class="table table-bordered container mt-5 border mx-auto"
-            style={{ marginLeft: "30px" }}
+            style={{ marginLeft: "20px" }}
           >
             <thead className="text-center">
               <tr>

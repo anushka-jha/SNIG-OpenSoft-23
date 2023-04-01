@@ -91,7 +91,7 @@ const MyAccount = () => {
             className="btn btn-primary"
             style={{ width: "90%", marginLeft: "5%" }}
           >
-            <Link to="/bankform" style={{ color: "white" }}>
+            <Link to="/bankform" style={{ color: "white", textDecoration: "none" }}>
               Add new account
             </Link>
           </Button>

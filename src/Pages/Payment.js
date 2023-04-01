@@ -128,35 +128,36 @@ function Payment() {
             marginTop: 10 + "em",
             width: "50%",
             height: "50%",
-            marginTop: "30px",
+            
           }}
         >
-          <h2 className="card-header text-center">Enter recipient details</h2>
+          <h2 className="card-header text-center">Enter Recipient Details</h2>
           <div className="card-body">
             <Form>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control mb-2"
                   placeholder="Account number"
                 />
               </div>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control mb-2"
                   placeholder="IFSC"
                 />
               </div>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control mb-2"
                   placeholder="Recipient name"
                 />
               </div>
-              <MDBBtn
-                color="dark"
+              <button
+                className = "btn btn-dark"
+                
                 style={{
                   borderRadius: "4px",
                   width: "100%",
@@ -165,7 +166,7 @@ function Payment() {
                 }}
               >
                 Debit or Credit Card
-              </MDBBtn>
+              </button>
 
               <PayPalScriptProvider options={{ "client-id": "test" }}>
                 <PayPalButtons style={{ layout: "horizontal" }} />

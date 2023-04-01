@@ -5,14 +5,14 @@ import Button from "react-bootstrap/Button";
 function bankform() {
   return (
     <>
-      <div className="card mx-auto w-50" style={{ marginTop: 3 + "em" }}>
+      <div className="card mx-auto w-50" style={{ marginTop: 7 + "em" }}>
         <h2 className="card-header text-center">Bank details form</h2>
         <div className="card-body">
           <Form>
             <div className="form-group">
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder="Account holder Name"
               />
             </div>
@@ -20,14 +20,14 @@ function bankform() {
             <div className="form-group">
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder="Bank Name"
               />
             </div>
             <div className="form-group">
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder="Account Number"
               />
             </div>
@@ -35,7 +35,7 @@ function bankform() {
             <div className="form-group">
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder="IFSC code"
               />
             </div>
@@ -43,7 +43,7 @@ function bankform() {
             <div className="form-group">
               <input
                 type="tel"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder=" Mobile Number"
               />
             </div>
@@ -51,7 +51,7 @@ function bankform() {
             <div className="form-group">
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-2"
                 placeholder="Aadhar number"
               />
             </div>
@@ -60,7 +60,9 @@ function bankform() {
               type="button"
               className="btn btn-primary"
               style={{ width: "100%" }}
+              href="/dashboard"
             >
+
               Submit
             </Button>
             <p></p>
