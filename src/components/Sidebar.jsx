@@ -21,15 +21,9 @@ const Sidebar = () => {
       }}
     >
       <CDBSidebar textColor="#676b84" backgroundColor="#f7faff">
-        <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-          <a
-            href="/"
-            className="text-decoration-none"
-            style={{ color: "inherit" }}
-          >
-            
-          </a>
-        </CDBSidebarHeader>
+        <CDBSidebarHeader
+          prefix={<i className="fa fa-bars fa-large"></i>}
+        ></CDBSidebarHeader>
 
         <CDBSidebarContent
           className="sidebar-content"
@@ -57,9 +51,7 @@ const Sidebar = () => {
             <CDBSidebarMenuItem icon="chart-line">
               <Link to="/analytics">Analytics</Link>
             </CDBSidebarMenuItem>
-            {/* <CDBSidebarMenuItem icon="chart-line">
-              <Link to="/expenditure">Expenditure analysis</Link>
-            </CDBSidebarMenuItem> */}
+
             <CDBSidebarMenuItem icon="chart-line">
               <Link to="/">Logout option</Link>
             </CDBSidebarMenuItem>

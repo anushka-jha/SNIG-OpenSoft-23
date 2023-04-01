@@ -17,7 +17,7 @@ const MyAccount = () => {
     setIsHover(false);
   };
   return (
-    <div >
+    <div>
       <Navbar handleEnter={handleEnter} handleLeave={handleLeave} />
       {isHover && (
         <ModalDiv handleEnter={handleEnter} handleLeave={handleLeave} />
@@ -30,7 +30,7 @@ const MyAccount = () => {
         <div className="w-100">
           <table
             class="table table-bordered container mt-5 border mx-auto"
-            style={{ marginLeft: "30px"}}
+            style={{ marginLeft: "30px" }}
           >
             <thead className="text-center">
               <tr>
@@ -46,43 +46,43 @@ const MyAccount = () => {
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>@fat</td>
-                <td>@fat</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
                 <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
                 <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
                 <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
                 <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>6745217@r</td>
+                <td>1234567890</td>
               </tr>
             </tbody>
           </table>
