@@ -1,5 +1,205 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import React, {Component} from 'react';
+import { Consumer } from '../../context';//from 'react';
+import TextInputGroup from './TextInputGroup';
+import axios from 'axios';
+
+class EditProfile extends Component {
+  state={
+    name:'',
+    email:'',
+    country:'',
+    city:'',
+    phNum:'',
+    username:'',
+    password:'',
+    errors:{}
+  };
+
+  async componentDidMount(){
+    const {id} = this.props.match.params;
+    const res= await axios.
+    get (`https://jsonplaceholder.typicode.com/users/${id}`)
+    const user=res.data;
+    this.setState({
+      name:user.name,
+      email:user.email,
+      country:user.country,
+      city:user.city,
+      phNum:user.phNum,
+      username:user.username,
+      password:user.password
+    })
+  }
+  onSubmit =async(dispatch, e) =>
+  {
+    e.preventDefault();
+    const {name,email,country,city,phNum,username,password} = this.state;
+    if(name===''){
+      this.setState({errors:{name:'Name is required'}});
+      return;
+    }
+    if(email===''){
+      this.setState({errors:{email:'email is required'}});
+      return;
+    }
+    if(country===''){
+      this.setState({errors:{country:'country is required'}});
+      return;
+    }
+    if(city===''){
+      this.setState({errors:{city:'City is required'}});
+      return;
+    }
+    if(phNum===''){
+      this.setState({errors:{phNum:'Phone Number is required'}});
+      return;
+    }
+    if(username===''){
+      this.setState({errors:{username:'Username is required'}});
+      return;
+    }
+    if(password===''){
+      this.setState({errors:{password:'Password is required'}});
+      return;
+    }
+
+    const updUser={
+      name,
+      email,
+      country,
+      city,
+      phNum,
+      username,
+      password
+    }
+    const {id} = this.props.match.params;
+    const res = await axios.
+    put(`https://jsonplaceholder.typicode.com/users/${id}`,updUser);
+    dispatch({type: 'UPDATE_USER', payload:res.data});
+
+
+    this.setState({
+      name:'',
+      email:'',
+      country:'',
+      city:'',
+      phNum:'',
+      username:'',
+      password:'',
+      errors:{}
+    })
+    //redirection this will redirect us to mainpage '/' after submission
+    this.props.history.push('/'); 
+  };
+
+  onNameChange = (e)=> this.setState({name:e.target.value})
+  onEmailChange = (e)=> this.setState({email:e.target.value})
+  onCountryChange = (e)=> this.setState({country:e.target.value})
+  onCityChange = (e)=> this.setState({city:e.target.value})
+  onPhNumChange = (e)=> this.setState({phNum:e.target.value})
+  onUserNameChange = (e)=> this.setState({username:e.target.value})
+  onPasswordChange = (e)=> this.setState({password:e.target.value})
+
+  render() {
+    const{name,email,country,city,phNum,username,password,errors} = this.state;
+    return(
+      <Consumer>
+        {value =>{
+          const {dispatch} = value;
+          return(<div className="card mb-3">
+            <div className="card-Header" style={{padding:'20px'}}>Update User</div>
+            <div className="card-body">
+              <form onSubmit={this.onSubmit.bind(this,dispatch)}>
+
+                <TextInputGroup
+                label="Name"
+                placeholder="Enter Name "
+                value={name}
+                name="Name"
+                onChange={this.onNameChange}
+                error={errors.name}
+
+                />
+                
+                <TextInputGroup
+                label="Email"
+                placeholder="Enter Email "
+                value={email}
+                name="Email"
+                onChange={this.onEmailChange}
+                error={errors.email}
+
+                />
+
+                <TextInputGroup
+                label="Country"
+                placeholder="Enter Country "
+                value={country}
+                name="Country"
+                onChange={this.onCountryChange}
+                error={errors.country}
+
+                />
+                
+                <TextInputGroup
+                label="City"
+                placeholder="Enter City "
+                value={city}
+                name="City"
+                onChange={this.onCityChange}
+                error={errors.city}
+
+                />
+                
+                <TextInputGroup
+                label="Phone Number"
+                placeholder="Enter Phone Number "
+                value={phNum}
+                name="PhNum"
+                onChange={this.onPhNumChange}
+                error={errors.phNum}
+
+                />
+                
+                <TextInputGroup
+                label="Username"
+                placeholder="Enter Username "
+                value={username}
+                name="Username"
+                onChange={this.onUserNameChange}
+                error={errors.name}
+
+                />
+                
+                <TextInputGroup
+                label="Password"
+                placeholder="Enter Password "
+                value={password}
+                name="Password"
+                onChange={this.onPasswordChange}
+                error={errors.password}
+
+                />
+
+                <input type="submit"
+                value="Update User"
+                className="btn btn-light btn-black"
+                />
+
+              </form>
+            </div>
+          </div>)
+        }}
+      </Consumer>
+    )
+
+  }
+
+}
+
+export default EditProfile;
 
 import {
   MDBCol,
@@ -19,7 +219,7 @@ import {
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
 
-export default function ProfilePage() {
+export function ProfilePage() {
   return (
     <section style={{ backgroundColor: '#f7faff' }}>
       <MDBContainer className="py-5">
