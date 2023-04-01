@@ -28,11 +28,16 @@ const Analytics = () => {
       >
         
         <Sidebar />
+<<<<<<< HEAD
         <Chart1 />
         <Chart2 />
 
         
 
+=======
+        <Chart1 style={{ marginTop: "20px" }} />
+        <Chart2 style={{ marginTop: "20px" }} />
+>>>>>>> fff38ea77e3c19a822f576e060e75ef7b61e5f87
       </div>
       
 

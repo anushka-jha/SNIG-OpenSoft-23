@@ -18,7 +18,7 @@ import Expenditure from "./Pages/expenditure";
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/signup" element={<Signup />} />
