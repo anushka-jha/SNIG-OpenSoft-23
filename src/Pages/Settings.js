@@ -12,7 +12,7 @@ const Settings = () => {
       <Sidebar />
       <Form
         className="card mx-auto w-50"
-        style={{ marginTop: 10 + "em", height: "100vh" }}
+        style={{ marginTop: 10 + "em", height: "30vh" }}
       >
         <div>
           <div className="card-body">

@@ -1,32 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assests/Dashboard.css";
+
 
 function ModalDiv(props) {
   return (
     <div
-      className="modal-div"
+      style = {{position:"absolute", right: "35px",
+      height: "200px",
+      width: "180px",
+      padding: "20px",
+      backgroundColor: "#4d4f5c",
+      color: "white",
+      borderRadius: "2%",
+      textAlign:"end",
+      zIndex:2}}
       onMouseEnter={props.handleEnter}
       onMouseLeave={props.handleLeave}
     >
-      <p style={{ color: "#828bb2", fontSize: "12px" }}>Welcome Admin!</p>
-      <p style={{ fontSize: "12px" }}>Trevor James</p>
+    
+        
+      <p style={{ fontSize: "12px" }}>Welcome Admin!</p>
+      <p style={{fontSize: "12px" }}>Username</p>
       <hr />
       <Link
         to="/createprofile"
-        style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
+        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none"}}
       >
         <p>My Profile</p>
       </Link>
       <a
         href="#"
-        style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
+        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Settings</p>
       </a>
       <Link
         to="/"
-        style={{ fontSize: "12px", textDecoration: "none", color: "white" }}
+        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Log Out</p>
       </Link>

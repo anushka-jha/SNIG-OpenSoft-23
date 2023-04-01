@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from "./Footer.js";
 
+
 function mainpage() {
   return (
     <>
     <nav className="navbar navbar-dark bg-primary">
         <a className="navbar-brand" href="#">
-            <img src="" width="30" height="30" alt=""></img>
+            <img src="logo192.png" width="40" height="40" alt=""></img>
         </a> 
         <span className="navbar-text">
             <Link to="/login">LOGIN</Link>
