@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // import React, { useEffect } from "react";
 // import axios from "axios";
 // import Form from "react-bootstrap/Form";
@@ -74,6 +75,8 @@
 
 // export default Payment;
 =======
+=======
+>>>>>>> 7d4907fcf3f5665b692834aa9bcda370b2255f48
 import React, { useEffect } from "react";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
@@ -148,4 +151,7 @@ function Payment() {
 }
 
 export default Payment;
+<<<<<<< HEAD
 >>>>>>> 1a85427e2ccc85aebc76d9c431715f5c0315a107
+=======
+>>>>>>> 7d4907fcf3f5665b692834aa9bcda370b2255f48

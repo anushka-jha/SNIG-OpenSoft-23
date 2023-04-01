@@ -41,9 +41,13 @@ const Sidebar = () => {
               <Link to="/dashboard">Dashboard</Link>
             </CDBSidebarMenuItem>
 
-            <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="table">
-              Transactions History
+              {/* <Link to="/transactions"> */}
+              Transactions
+              {/* </Link> */}
+            </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="table">
+              <Link to="/transactionhistory">Transactions History</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="user">

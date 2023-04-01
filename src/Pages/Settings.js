@@ -35,7 +35,10 @@ const Settings = () => {
               className="btn btn-primary"
               style={{ width: "50%" }}
             >
-              <Link to="/dashboard" style={{ color: "white" }}>
+              <Link
+                to="/dashboard"
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 Update Password
               </Link>
             </Button>
