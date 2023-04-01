@@ -22,7 +22,7 @@ A banking system built with MERN stack, and uses API's. This banking system enab
 ## Install
 Some basic Git commands are:
 ```
-$ git clone https://rb.gy/7kyo 
+$ git clone <repository link> 
 $ cd project
 $ npm install
 ```
@@ -64,7 +64,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Language & Tools
-* [Node](https://nodejs.org/en/ "Node title")
-* [Express](https://expressjs.com/ "Express title")
-* [Mongoose](https://mongoosejs.com/ "Mongoose title")
-* [React](https://reactjs.org/ "React title")
+* [Node](https://nodejs.org/en/ "Node title") An open-source JavaScript run-time environment for executing server-side JavaScript code.
+* [Express](https://expressjs.com/ "Express title") Express.js: It is a popular Node.js framework that provides a set of tools and libraries for building web applications. Express.js is used to create RESTful APIs for the MERN project.
+* [Mongoose](https://mongoosejs.com/ "Mongoose title") It is an Object Data Modeling (ODM) library for MongoDB and Node.js. Mongoose is used to create models, schemas, and handle data validation for the MongoDB database. The databases defined for this are User database, Bank database and Payment database.
+* [React](https://reactjs.org/ "React title") React is a free and open-source front-end JavaScript library for building user interfaces based on components.

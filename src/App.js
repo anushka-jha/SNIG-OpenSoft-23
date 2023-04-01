@@ -5,7 +5,7 @@ import Signup from "./Pages/signup";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Mainpage from "./Pages/mainpage";
-// import UpdateProfile from "./Pages/Create-Profile";
+import UpdateProfile from "./Pages/Create-Profile";
 import Analytics from "./Pages/Analytics";
 import BankForm from "./Pages/bankform";
 import Settings from "./Pages/Settings";
@@ -14,6 +14,7 @@ import AccountStatement from "./Pages/AccountStatement";
 import Contact from "./Pages/Contact";
 import TransactionHistory from "./Pages/TransationHistory";
 import Payment from "./Pages/Payment";
+import Expenditure from "./Pages/expenditure";
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* <Route path="/updateprofile" element={<UpdateProfile />} /> */}
+        <Route path="/updateprofile" element={<UpdateProfile />} /> 
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/bankform" element={<BankForm />} />
         <Route path="/accountstatement" element={<AccountStatement />} />
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/settings" element={<Settings />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/transactionhistory" element={<TransactionHistory />} />
+        <Route path="/expenditure" element={<Expenditure />} />
       </Routes>
     </div>
   );
