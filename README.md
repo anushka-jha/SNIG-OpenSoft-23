@@ -1,7 +1,7 @@
 # Banking Platform
 
 ## Description
-A banking system built with MERN stack, and uses API's. This banking system enables four main different flows or implementations:
+A banking system built with MERN stack, and uses API's. This banking system enables eight main different flows or implementations:
 1. SignUp Page > Login
 2. Login > Dashboard
 3.  Dashboard > My profile > Displaying all the necessary information of users 
