@@ -22,7 +22,7 @@ A banking system built with MERN stack, and uses API's. This banking system enab
 ## Install
 Some basic Git commands are:
 ```
-$ git clone https://rb.gy/7kyo 
+$ git clone <repository link> 
 $ cd project
 $ npm install
 ```

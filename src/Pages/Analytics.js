@@ -4,6 +4,7 @@ import Chart1 from "../components/Chart1";
 import Chart2 from "../components/Chart2";
 import Navbar from "../components/Navbar";
 import ModalDiv from "../components/ModalDiv";
+import { Button } from "react-bootstrap";
 
 const Analytics = () => {
   const [isHover, setIsHover] = useState(false);
@@ -24,21 +25,14 @@ const Analytics = () => {
       )}
       <div
         className="flex-container"
-        style={{ marginTop: "50px", display: "flex" }}
+        style={{ marginTop: "40px", display: "flex" }}
       >
-        
         <Sidebar />
 
         <Chart1 />
         <Chart2 />
       </div>
-      
-
-      
-
-      
-  </div>
-    
+</div>
   );
 };
 
