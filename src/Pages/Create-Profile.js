@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Component } from "react";
-import { Consumer } from "../../context"; //from 'react';
-import TextInputGroup from "./TextInputGroup";
+import { Consumer } from "../components/context"; //from 'react';
+import TextInputGroup from "../components/TextInputGroup";
 import axios from "axios";
 import {
   MDBCol,
@@ -22,7 +22,7 @@ import {
   MDBListGroupItem,
 } from "mdb-react-ui-kit";
 
-class EditProfile extends Component {
+/*class EditProfile extends Component {
   state = {
     name: "",
     email: "",
@@ -213,21 +213,15 @@ class EditProfile extends Component {
   }
 }
 
-export default EditProfile;
+export default EditProfile;*/
 
-export function ProfilePage() {
+const UpdateProfile = () => {
   return (
     <section style={{ backgroundColor: "#f7faff" }}>
       <MDBContainer className="py-5">
         <MDBRow>
           <MDBCol>
             <MDBBreadcrumb className="bg-light rounded-3 p-3 mb-4">
-              <MDBBreadcrumbItem>
-                <a href="#">Home</a>
-              </MDBBreadcrumbItem>
-              <MDBBreadcrumbItem>
-                <a href="#">User</a>
-              </MDBBreadcrumbItem>
               <MDBBreadcrumbItem active>User Profile</MDBBreadcrumbItem>
             </MDBBreadcrumb>
           </MDBCol>
@@ -327,7 +321,7 @@ export function ProfilePage() {
                   <p> </p>
 
                   <button type="submit" class="btn btn-primary">
-                    Create Profile
+                    Update Profile
                   </button>
                 </form>
               </MDBCardBody>
@@ -337,4 +331,6 @@ export function ProfilePage() {
       </MDBContainer>
     </section>
   );
-}
+};
+
+export default UpdateProfile;

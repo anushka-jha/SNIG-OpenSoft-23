@@ -5,25 +5,25 @@ import Signup from "./Pages/signup";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Mainpage from "./Pages/mainpage";
-// import UpdateProfile from "./Pages/Create-Profile";
+import Profile from "./Pages/Create-Profile";
 import Analytics from "./Pages/Analytics";
 import BankForm from "./Pages/bankform";
 import Settings from "./Pages/Settings";
 import MyAccount from "./Pages/MyAccounts";
 import AccountStatement from "./Pages/AccountStatement";
 import Contact from "./Pages/Contact";
-import TransactionHistory from "./Pages/TransationHistory";
+import TransactionHistory from "./Pages/TransactionHistory";
 import Payment from "./Pages/Payment";
 
 const App = () => {
   return (
-    <div >
+    <div>
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* <Route path="/updateprofile" element={<UpdateProfile />} /> */}
+        <Route path="/updateprofile" element={<Profile />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/bankform" element={<BankForm />} />
         <Route path="/accountstatement" element={<AccountStatement />} />

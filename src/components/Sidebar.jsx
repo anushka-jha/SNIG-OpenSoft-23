@@ -22,13 +22,13 @@ const Sidebar = () => {
     >
       <CDBSidebar textColor="#676b84" backgroundColor="#f7faff">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-          <a
+          {/* <a
             href="/"
             className="text-decoration-none"
             style={{ color: "inherit" }}
           >
             
-          </a>
+          </a> */}
         </CDBSidebarHeader>
 
         <CDBSidebarContent
