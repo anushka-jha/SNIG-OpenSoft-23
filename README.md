@@ -1,9 +1,28 @@
 # Banking Platform
 
-> Banking platform built with the MERN stack.
+## Description
+A banking system built with MERN stack, and uses API's. This banking system enables four main different flows or implementations:
+1. SignUp Page > Login
+2. Login > Dashboard
+3.  Dashboard > My profile > Displaying all the necessary information of customers 
+4.  Dashboard > Transactions > Money transfer between any two customers
+5.  Dashboard > Transactions History > Information of all the transactions that takes place including date & time 
+6.  Dashboard > My Accounts > Information of all the accounts of a particular user
+7.  Dashboard > Analytics > Information about income and expenditure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Features:
+  * Node provides the backend environment for this application
+  * Express middleware is used to handle requests, routes
+  * Mongoose schemas to model the application data
+  * React for displaying UI components
 
+## Install
+Some basic Git commands are:
+```
+$ git clone https://github.com/anushka-jha/SNIG-OpenSoft-23.git
+$ cd project
+$ npm install
+```
 ## Available Scripts
 
 In the project directory, you can run:
@@ -41,3 +60,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Language & Tools
+* [Node](https://nodejs.org/en/ "Node title")
+* [Express](https://expressjs.com/ "Express title")
+* [Mongoose](https://mongoosejs.com/ "Mongoose title")
+* [React](https://reactjs.org/ "React title")
