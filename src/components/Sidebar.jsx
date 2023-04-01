@@ -39,23 +39,17 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="home">Dashboard</CDBSidebarMenuItem>
 
-<<<<<<< HEAD
-            <CDBSidebarMenuItem icon="table"><Link to="/payment">
-                Transactions
-              </Link></CDBSidebarMenuItem>
-=======
             <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="table">
               Transactions History
             </CDBSidebarMenuItem>
->>>>>>> 588852ca8c9cbfc523f52d1c202ddd16c196150f
 
             <CDBSidebarMenuItem icon="user">
-              <Link to="/bankform">My Accounts</Link>
+              <Link to="/myaccount">My Accounts</Link>
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="chart-line">
-              Account statement
+              <Link to="/accountstatement">Account statement</Link>
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line">
               <Link to="/analytics">Analytics</Link>
@@ -65,7 +59,7 @@ const Sidebar = () => {
             </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="exclamation-circle">
-              Settings
+              <Link to="/settings"> Settings</Link>
             </CDBSidebarMenuItem>
           </CDBSidebarMenu>
         </CDBSidebarContent>
