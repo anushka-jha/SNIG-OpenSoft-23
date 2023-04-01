@@ -51,9 +51,7 @@ const Sidebar = () => {
             <CDBSidebarMenuItem icon="chart-line">
               <Link to="/analytics">Analytics</Link>
             </CDBSidebarMenuItem>
-            {/* <CDBSidebarMenuItem icon="chart-line">
-              <Link to="/expenditure">Expenditure analysis</Link>
-            </CDBSidebarMenuItem> */}
+
             <CDBSidebarMenuItem icon="chart-line">
               <Link to="/">Logout option</Link>
             </CDBSidebarMenuItem>

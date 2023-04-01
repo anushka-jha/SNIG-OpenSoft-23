@@ -20,7 +20,6 @@ function Navbar(props) {
         to="/"
         className="navbar-brand h3"
         style={{ marginLeft: 0.5 + "em" }}
-        href="#"
       >
         ShiftBank
       </Link>

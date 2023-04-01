@@ -15,7 +15,7 @@ function mainpage() {
         </Link>
         <span className="navbar-text">
           <Link to="/login">LOGIN</Link>
-          <a> / </a>
+          <a>/</a>
           <Link to="/signup">SIGNUP</Link>
         </span>
       </nav>
