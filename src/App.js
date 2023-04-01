@@ -17,7 +17,7 @@ import TransactionHistory from "./Pages/TransationHistory";
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/signup" element={<Signup />} />

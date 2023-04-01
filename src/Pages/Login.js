@@ -34,7 +34,7 @@ const Login = () => {
   return (
     <>
       {success ? (
-        <section className="Section">
+        <section className="Section ">
           <h1 className="H1">You are logged in!</h1>
           <br />
           <p className="para">
@@ -44,7 +44,7 @@ const Login = () => {
           </p>
         </section>
       ) : (
-        <section className="Section">
+        <div className="Section" style={{marginTop:"10%"}}>
           <p
             ref={errRef}
             className={errMsg ? "errmsg para" : "offscreen para"}
@@ -52,7 +52,7 @@ const Login = () => {
           >
             {errMsg}
           </p>
-          <div className="card mx-auto w-25" style={{marginTop: 15 + 'em'}}>
+          <div className="card mx-auto w-50 align-middle">
             <h3 className="card-header text-center">
                 Log in
             </h3>
@@ -96,7 +96,7 @@ const Login = () => {
             </form>
             </div>
           </div>
-        </section>
+        </div>
       )}
     </>
   );

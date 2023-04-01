@@ -12,18 +12,6 @@ function Footer() {
     >
       {/* <Container> */}
       <div className="row mx-auto">
-        {/* <div className="col-sm-4">
-            <h5 className='text-center'>Contact Us</h5>
-            <Form>
-                <div className="form-group mb-2">
-                    <input type="text" className="form-control" placeholder="Name"/>
-                </div>
-                <div className="form-group mb-2">
-                    <input type="email" className="form-control" placeholder="Enter email"/>
-                </div>
-                <Button type="button" className="btn btn-primary mb-1">Submit</Button>
-            </Form>
-          </div> */}
         <div className="col-sm-4">
           <h5 className="text-center">Links</h5>
           <p className="text-center">
