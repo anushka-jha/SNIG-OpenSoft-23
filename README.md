@@ -4,11 +4,12 @@
 A banking system built with MERN stack, and uses API's. This banking system enables four main different flows or implementations:
 1. SignUp Page > Login
 2. Login > Dashboard
-3.  Dashboard > My profile > Displaying all the necessary information of customers 
-4.  Dashboard > Transactions > Money transfer between any two customers
+3.  Dashboard > My profile > Displaying all the necessary information of users 
+4.  Dashboard > Transactions > Money transfer between any two users
 5.  Dashboard > Transactions History > Information of all the transactions that takes place including date & time 
 6.  Dashboard > My Accounts > Information of all the accounts of a particular user
 7.  Dashboard > Analytics > Information about income and expenditure
+8.  Dashboard > Settings > Option to edit password
 
 * Features:
   * Node provides the backend environment for this application
@@ -19,7 +20,7 @@ A banking system built with MERN stack, and uses API's. This banking system enab
 ## Install
 Some basic Git commands are:
 ```
-$ git clone https://github.com/anushka-jha/SNIG-OpenSoft-23.git
+$ git clone https://rb.gy/7kyo 
 $ cd project
 $ npm install
 ```
