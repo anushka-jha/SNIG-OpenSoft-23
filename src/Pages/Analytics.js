@@ -1,14 +1,35 @@
 import Sidebar from "../components/Sidebar";
-import React from "react";
+import React, { useState } from "react";
 import Chart1 from "../components/Chart1";
 import Chart2 from "../components/Chart2";
+import Navbar from "../components/Navbar";
+import ModalDiv from "../components/ModalDiv";
 
 const Analytics = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleLeave = () => {
+    setIsHover(false);
+  };
+
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
-      <Sidebar />
-      <Chart1 />
-      <Chart2 />
+    <div>
+      <Navbar handleEnter={handleEnter} handleLeave={handleLeave} />
+      {isHover && (
+        <ModalDiv handleEnter={handleEnter} handleLeave={handleLeave} />
+      )}
+      <div
+        className="flex-container"
+        style={{ marginTop: "50px", display: "flex" }}
+      >
+        <Sidebar />
+        <Chart1 />
+        <Chart2 />
+      </div>
     </div>
   );
 };
