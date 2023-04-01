@@ -13,7 +13,7 @@ import MyAccount from "./Pages/MyAccounts";
 import AccountStatement from "./Pages/AccountStatement";
 import Contact from "./Pages/Contact";
 import TransactionHistory from "./Pages/TransationHistory";
-// import Payment from "./Pages/Payment";
+import Payment from "./Pages/Payment";
 
 const App = () => {
   return (
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/bankform" element={<BankForm />} />
         <Route path="/accountstatement" element={<AccountStatement />} />
-        {/* <Route path="/payment" element={<Payment />} /> */}
+        <Route path="/payment" element={<Payment />} />
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/contact" element={<Contact />} />

@@ -1,42 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 function ModalDiv(props) {
   return (
     <div
-      style = {{position:"absolute", right: "35px",
-      height: "200px",
-      width: "180px",
-      padding: "20px",
-      backgroundColor: "#4d4f5c",
-      color: "white",
-      borderRadius: "2%",
-      textAlign:"end",
-      zIndex:2}}
+      style={{
+        position: "absolute",
+        right: "35px",
+        height: "200px",
+        width: "180px",
+        padding: "20px",
+        backgroundColor: "#4d4f5c",
+        color: "white",
+        borderRadius: "2%",
+        textAlign: "end",
+        zIndex: 2,
+      }}
       onMouseEnter={props.handleEnter}
       onMouseLeave={props.handleLeave}
     >
-    
-        
       <p style={{ fontSize: "12px" }}>Welcome Admin!</p>
-      <p style={{fontSize: "12px" }}>Username</p>
+      <p style={{ fontSize: "12px" }}>Username</p>
       <hr />
       <Link
-        to="/createprofile"
-        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none"}}
+        to="/updateprofile"
+        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
       >
         <p>My Profile</p>
       </Link>
-      <a
-        href="#"
-        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
+      <Link
+        to="/settings"
+        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Settings</p>
-      </a>
+      </Link>
       <Link
         to="/"
-        style={{color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
+        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Log Out</p>
       </Link>
