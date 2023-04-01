@@ -27,14 +27,14 @@ const TransactionHistory = () => {
         style={{ marginTop: "50px", display: "flex" }}
       >
         <Sidebar />
-        <div>
+        <div className="w-100">
           <table
-            class="table table-bordered container mt-5 border "
+            class="table table-bordered container mt-5 border mx-auto"
             style={{ marginLeft: "30px" }}
           >
-            <thead>
+            <thead className="text-center">
               <tr>
-                <th scope="col"></th>
+                <th scope="col">#</th>
                 <th scope="col">Transaction ID</th>
 
                 <th scope="col">Amount</th>
@@ -43,7 +43,7 @@ const TransactionHistory = () => {
                 <th scope="col">Description</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-center">
               <tr>
                 <th scope="row">1</th>
                 <td>123647d8</td>

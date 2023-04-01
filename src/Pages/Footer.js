@@ -12,35 +12,35 @@ function Footer() {
     >
       <div className="row mx-auto">
         
-        <div className="col-sm-2">
+        <div className="col-2">
           <h6>Links</h6>
         </div>
-        <div className="col-sm-2">  
-          <Link to="/">Home</Link>
+        <div className="col-2">  
+          <Link to="/" style={{ color: "white"}}>Home</Link>
         </div> 
-        <div className="col-sm-2">
-            <a href="#">About Us</a>
+        <div className="col-2">
+            <a href="#" style={{ color: "white"}}>About Us</a>
         </div>
-        <div className="col-sm-2">
-            <a href="#">Services</a>
+        <div className="col-2">
+            <a href="#" style={{ color: "white"}}>Services</a>
         </div>
-        <div className="col-sm-2">
-            <Link to="/contact">Contact Us</Link>
+        <div className="col-2">
+            <Link to="/contact" style={{ color: "white"}}>Contact Us</Link>
         </div>
       </div>
       <p></p>
 
       <div className="row mx-auto mb-2">
-        <div className="col-sm-1">
+        <div className="col-2">
           <h6>Follow Us</h6>
         </div>   
-        <div className="col-sm-1">
+        <div className="col-1">
         <img src="logo192.png" width="20" height="20" alt=""></img>
         </div>   
-        <div className="col-sm-1">
+        <div className="col-1">
         <img src="logo192.png" width="20" height="20" alt=""></img>
         </div>
-        <div className="col-sm-1">
+        <div className="col-1">
         <img src="logo192.png" width="20" height="20" alt=""></img>
         </div>
       </div>

@@ -17,7 +17,7 @@ const MyAccount = () => {
     setIsHover(false);
   };
   return (
-    <div>
+    <div >
       <Navbar handleEnter={handleEnter} handleLeave={handleLeave} />
       {isHover && (
         <ModalDiv handleEnter={handleEnter} handleLeave={handleLeave} />
@@ -27,12 +27,12 @@ const MyAccount = () => {
         style={{ marginTop: "50px", display: "flex" }}
       >
         <Sidebar />
-        <div>
+        <div className="w-100">
           <table
-            class="table table-bordered container mt-5 border "
-            style={{ marginLeft: "30px" }}
+            class="table table-bordered container mt-5 border mx-auto"
+            style={{ marginLeft: "30px"}}
           >
-            <thead>
+            <thead className="text-center">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Account Number</th>
@@ -41,7 +41,7 @@ const MyAccount = () => {
                 <th scope="col">Phone Number</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="text-center">
               <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
@@ -89,7 +89,7 @@ const MyAccount = () => {
           <Button
             type="button"
             className="btn btn-primary"
-            style={{ width: "50%", marginLeft: "30px" }}
+            style={{ width: "90%", marginLeft: "5%" }}
           >
             <Link to="/bankform" style={{ color: "white" }}>
               Add new account
