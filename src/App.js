@@ -12,6 +12,7 @@ import Settings from "./Pages/Settings";
 import MyAccount from "./Pages/MyAccounts";
 import AccountStatement from "./Pages/AccountStatement";
 import Contact from "./Pages/Contact";
+// import Payment from "./Pages/Payment";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/myaccount" element={<MyAccount />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/payment" element={<Payment />} /> */}
       </Routes>
     </div>
   );

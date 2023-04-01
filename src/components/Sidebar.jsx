@@ -28,7 +28,7 @@ const Sidebar = () => {
             className="text-decoration-none"
             style={{ color: "inherit" }}
           >
-            Sidebar
+            FINANCE
           </a>
         </CDBSidebarHeader>
 
@@ -37,7 +37,9 @@ const Sidebar = () => {
           style={{ fontSize: "14px" }}
         >
           <CDBSidebarMenu>
-            <CDBSidebarMenuItem icon="home">Dashboard</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="home">
+              <Link to="/dashboard">Dashboard</Link>
+            </CDBSidebarMenuItem>
 
             <CDBSidebarMenuItem icon="table">Transactions</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="table">
