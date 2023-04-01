@@ -3,12 +3,12 @@ import React from "react";
 
 function Navbar(props) {
   return (
-    <nav className="navbar d-flex mx-auto" style={{padding:"0",marginTop:"8px", backgroundColor:"white",
+    <nav className="navbar d-flex mx-auto" style={{paddingTop:"10px",paddingBottom:"10px",marginTop:"8px",backgroundColor:"#655DBB",
     width: "99%",   
     position: "relative",
     top: "10px",
     borderRadius: "2%"}}>
-      <a className="navbar-brand h3" style={{marginLeft:0.5+'em'}} href="#">Appname</a>
+      <a className="navbar-brand h3" style={{marginLeft:0.5+'em',color:"white"}} href="#">Shiftbank</a>
       <div
         onMouseEnter={props.handleEnter}
         onMouseLeave={props.handleLeave}

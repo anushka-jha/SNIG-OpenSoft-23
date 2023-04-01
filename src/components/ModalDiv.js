@@ -24,19 +24,19 @@ function ModalDiv(props) {
       <hr />
       <Link
         to="/updateprofile"
-        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
+        style={{ color: "white", fontSize: "12px", textDecoration: "none" }}
       >
         <p>My Profile</p>
       </Link>
       <Link
         to="/settings"
-        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
+        style={{ color: "white", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Settings</p>
       </Link>
       <Link
         to="/"
-        style={{ color: "#828bb2", fontSize: "12px", textDecoration: "none" }}
+        style={{ color: "white", fontSize: "12px", textDecoration: "none" }}
       >
         <p>Log Out</p>
       </Link>
