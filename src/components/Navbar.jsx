@@ -9,7 +9,7 @@ function Navbar(props) {
     position: "relative",
     top: "10px",
     borderRadius: "2%"}}>
-      <a className="navbar-brand h3" style={{marginLeft:0.5+'em',color:"white"}} href="#">Shiftbank</a>
+      <a className="navbar-brand h3" style={{marginLeft:0.5+'em',color:"white"}} href="/">Shiftbank</a>
       <div
         onMouseEnter={props.handleEnter}
         onMouseLeave={props.handleLeave}
@@ -18,7 +18,7 @@ function Navbar(props) {
         <a className="navbar-brand">
           <img
             className="img-fluid"
-            src="profile.jpg"
+            src="profilepic.webp"
             alt="Profile"
             width="50"
             height="50"

@@ -26,7 +26,7 @@ const Bankform = () => {
         style={{ marginTop: "50px", display: "flex" }}
       >
         <Sidebar />
-        <div className="card mx-auto w-50" style={{ marginTop: 7 + "em" }}>
+        <div className="card mx-auto w-50" style={{ marginTop: 7 + "em" ,height:"100%"}}>
           <h2 className="card-header text-center">Bank details form</h2>
           <div className="card-body">
             <Form>

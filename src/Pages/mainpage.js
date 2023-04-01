@@ -28,7 +28,7 @@ function mainpage() {
                     <p className="card-text text-center"><span style={{fontSize:"5vh",color:"#10316B"}}>9.15%</span><span style={{color:"#748DA6"}}>P.A*</span></p>
                 </div>
             </div>
-          </div>
+        </div>
       
         <div className="col-sm-4">
             <div className="card mb-5">
@@ -37,8 +37,8 @@ function mainpage() {
                     <p className="card-text text-center"><span style={{fontSize:"5vh",color:"#10316B"}}>9.15%</span><span style={{color:"#748DA6"}}>P.A*</span></p>
                 </div>
             </div>
-          </div>
         </div>
+       
         <div className="col-sm-4">
             <div className="card">
                 <div className="card-body text-center">
@@ -47,7 +47,11 @@ function mainpage() {
                 </div>
             </div>
           </div>
+    </div>
+          <Footer/>
         </div>
+
+       
       
   )
 }
