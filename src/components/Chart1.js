@@ -31,9 +31,13 @@ const Chart1 = () => {
 
   return (
     <CDBContainer style={{ width: "40%" }}>
-      <h3 className="mt-5">Bar chart</h3>
+      <h3 style={{marginTop:"25%"}}>Bar chart</h3>
       <Bar data={data} options={{ responsive: true }} />
+
+      <a className="btn btn-primary mt-5" href="/expenditure" role="button" style={{width:"100%", marginLeft:"50%"}}>Expenditures</a>
     </CDBContainer>
+
+    
   );
 };
 

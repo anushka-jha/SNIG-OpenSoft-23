@@ -31,7 +31,7 @@ const Chart2 = () => {
 
   return (
     <CDBContainer style={{ width: "40%" }}>
-      <h3 className="mt-5">Line chart</h3>
+      <h3 style={{marginTop:"25%"}}>Line chart</h3>
       <Line data={data} options={{ responsive: true }} />
     </CDBContainer>
   );
