@@ -28,9 +28,8 @@ const Analytics = () => {
         style={{ marginTop: "40px", display: "flex" }}
       >
         <Sidebar />
-        <Chart1>
-          <Button>hello</Button>
-        </Chart1>
+
+        <Chart1 />
         <Chart2 />
       </div>
     </div>
