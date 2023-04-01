@@ -22,7 +22,7 @@ function mainpage() {
 
     <div className="row mx-auto">
         <div className="col-sm-4">
-            <div className="card">
+            <div className="card mb-5">
                 <div className="card-body">
                     <h1 className="card-title text-center">Heading1</h1>
                     <p className="card-text text-center">Text1</p>
@@ -30,7 +30,7 @@ function mainpage() {
             </div>
         </div>
         <div className="col-sm-4">
-            <div className="card">
+            <div className="card mb-5">
                 <div className="card-body">
                     <h1 className="card-title text-center">Heading2</h1>
                     <p className="card-text text-center">Text2</p>

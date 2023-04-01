@@ -1,7 +1,7 @@
 # Banking Platform
 
 ## Description
-A banking system built with MERN stack, and uses API's. This banking system enables nine main different flows or implementations:
+A banking system built with MERN stack, and uses API's. This banking system enables ten main different flows or implementations:
 1. Main Webpage: The main webpage is the first page that a user sees when they visit our website. This page has option to SignUp/Login
 2. SignUp Page > Login
 3. Login > Dashboard
@@ -9,8 +9,9 @@ A banking system built with MERN stack, and uses API's. This banking system enab
 5.  Dashboard > Transactions > Money transfer between any two users
 6.  Dashboard > Transactions History > Information of all the transactions that takes place including date & time 
 7.  Dashboard > My Accounts > Information of all the accounts of a particular user
-8.  Dashboard > Analytics > Information about income and expenditure
-9.  Dashboard > Settings > Option to edit password
+8.  Dashboard > Account Statement > 
+9.  Dashboard > Analytics > Information about income and expenditure
+10. Dashboard > Settings > Option to edit password
 
 * Features:
   * Node provides the backend environment for this application

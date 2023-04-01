@@ -27,7 +27,7 @@ const Sidebar = () => {
             className="text-decoration-none"
             style={{ color: "inherit" }}
           >
-            FINANCE
+            
           </a>
         </CDBSidebarHeader>
 

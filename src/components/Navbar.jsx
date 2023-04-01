@@ -3,7 +3,11 @@ import React from "react";
 
 function Navbar(props) {
   return (
-    <nav className="navbar top d-flex" style={{padding:"0",marginTop:"8px"}}>
+    <nav className="navbar d-flex mx-auto" style={{padding:"0",marginTop:"8px", backgroundColor:"white",
+    width: "99%",   
+    position: "relative",
+    top: "10px",
+    borderRadius: "2%"}}>
       <a className="navbar-brand h3" style={{marginLeft:0.5+'em'}} href="#">Appname</a>
       <div
         onMouseEnter={props.handleEnter}

@@ -10,53 +10,41 @@ function Footer() {
       className="bg-dark text-white mt-5"
       style={{ position: "absolute", bottom: "0", width: "100%" }}
     >
-      {/* <Container> */}
       <div className="row mx-auto">
-        {/* <div className="col-sm-4">
-            <h5 className='text-center'>Contact Us</h5>
-            <Form>
-                <div className="form-group mb-2">
-                    <input type="text" className="form-control" placeholder="Name"/>
-                </div>
-                <div className="form-group mb-2">
-                    <input type="email" className="form-control" placeholder="Enter email"/>
-                </div>
-                <Button type="button" className="btn btn-primary mb-1">Submit</Button>
-            </Form>
-          </div> */}
-        <div className="col-sm-4">
-          <h5 className="text-center">Links</h5>
-          <p className="text-center">
-            <Link to="/">Home</Link>
-          </p>
-          <p className="text-center">
-            <a href="#">About Us</a>
-          </p>
-          <p className="text-center">
-            <a href="#">Services</a>
-          </p>
-          <p className="text-center">
-            <Link to="/contact">Contact Us</Link>
-          </p>
+        
+        <div className="col-2">
+          <h6>Links</h6>
         </div>
-        <div className="col-sm-4 text-center">
-          <h5>Follow Us</h5>
-          <p>Social media links go here</p>
+        <div className="col-2">  
+          <Link to="/" style={{ color: "white"}}>Home</Link>
+        </div> 
+        <div className="col-2">
+            <a href="#" style={{ color: "white"}}>About Us</a>
         </div>
-        {/* <Col md={4} className="mb-3">
-            <h5 className="mb-3">Follow Us</h5>
-            <p>Social media links go here</p>
-          </Col>
-          <Col md={4} className="mb-3">
-            <h5 className="mb-3">Follow Us</h5>
-            <p>Social media links go here</p>
-          </Col>
-          <Col md={4} className="mb-3">
-            <h5 className="mb-3">Follow Us</h5>
-            <p>Social media links go here</p>
-          </Col> */}
+        <div className="col-2">
+            <a href="#" style={{ color: "white"}}>Services</a>
+        </div>
+        <div className="col-2">
+            <Link to="/contact" style={{ color: "white"}}>Contact Us</Link>
+        </div>
       </div>
-      {/* </Container> */}
+      <p></p>
+
+      <div className="row mx-auto mb-2">
+        <div className="col-2">
+          <h6>Follow Us</h6>
+        </div>   
+        <div className="col-1">
+        <img src="logo192.png" width="20" height="20" alt=""></img>
+        </div>   
+        <div className="col-1">
+        <img src="logo192.png" width="20" height="20" alt=""></img>
+        </div>
+        <div className="col-1">
+        <img src="logo192.png" width="20" height="20" alt=""></img>
+        </div>
+      </div>
+      
     </footer>
   );
 }
